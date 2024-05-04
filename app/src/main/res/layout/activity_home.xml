@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/light_purple"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Center"
+        android:textAlignment="center"
+        android:textSize="48dp"
+        android:textColor="#350066"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/bname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/bauthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/bname"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/bpublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Publisher Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/bauthor"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/bcopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bpublisher"
+        android:hint="Number of Book Copies"
+        android:inputType="textPersonName"
+        android:minHeight="24dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/bbranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Department of Book"
+        android:textSize="20dp"
+        android:layout_below="@+id/bcopy"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Add New Book"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/bbranch"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Update Book Detail"
+        android:layout_below="@+id/btnInsert"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Delete Book Detail"
+        android:layout_below="@+id/btnUpdate"
+        />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="View Existing Books"
+        android:layout_below="@+id/btnDelete"
+        />
+
+    <Button
+        android:id="@+id/secondActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Book Deals"
+        android:onClick="goToSecondActivity"
+        android:textSize="18dp"
+        android:layout_below="@+id/btnView"
+        />
+
+
+</RelativeLayout>

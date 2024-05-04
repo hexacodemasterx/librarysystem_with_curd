@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/light_purple"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Deals"
+        android:textAlignment="center"
+        android:textSize="48dp"
+        android:textColor="#350066"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/mname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Member Name"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/bname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/mname"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/bissued"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Issued Date"
+        android:textSize="20dp"
+        android:layout_below="@+id/bname"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/breturned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Returned Date"
+        android:textSize="20dp"
+        android:layout_below="@+id/bissued"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Add New Book Deal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/breturned"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Update Book Deal"
+        android:layout_below="@+id/btnInsert"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Delete Book Deal"
+        android:layout_below="@+id/btnUpdate"
+        />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="View Existing Book Deals"
+        android:layout_below="@+id/btnDelete"
+        />
+
+</RelativeLayout>
