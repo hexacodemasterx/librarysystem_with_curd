@@ -26,8 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:hint="User Name"
+        android:textColorHint="#350066"
+        android:textColor="#350066"
         android:textSize="20dp"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"/>
 
     <EditText
         android:id="@+id/password"
@@ -35,8 +37,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username"
         android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#350066"
+        android:textColor="#350066"
         android:textSize="20dp"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"/>
 
     <EditText
         android:id="@+id/repassword"
@@ -44,8 +49,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
         android:hint="Conform Password"
+        android:inputType="textPassword"
+        android:textColorHint="#350066"
+        android:textColor="#350066"
         android:textSize="20dp"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"/>
 
     <Button
         android:id="@+id/btnsignup"
@@ -70,6 +78,6 @@
         android:layout_height="100dp"
         android:layout_marginTop="150dp"
         android:layout_marginLeft="140dp"
-        app:srcCompat="@drawable/download" />
+        app:srcCompat="@drawable/download"/>
 
 </RelativeLayout>
